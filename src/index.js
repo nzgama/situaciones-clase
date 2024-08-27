@@ -56,8 +56,8 @@ const ruleta = async () => {
   } while (!isFinished);
 };
 
-const situacionRandom = () => {
-  ruleta();
+const situacionRandom = async () => {
+  await ruleta();
   const cantidad = situaciones.length;
   const palabra = getRandomInt(cantidad);
   cartaTiuloHTML.innerHTML = situaciones[palabra];
