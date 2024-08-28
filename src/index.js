@@ -8,7 +8,7 @@ const situaciones = [
   "Hacen muchas preguntas",
 ];
 
-const btnPedir = document.querySelector("#btnPedir");
+const bodyHTML = document.querySelector("body");
 const cartaTiuloHTML = document.querySelector("#cartaTitulo");
 
 const getRandomInt = (max) => {
@@ -63,6 +63,6 @@ const situacionRandom = async () => {
   cartaTiuloHTML.innerHTML = situaciones[palabra];
 };
 
-btnPedir.addEventListener("click", () => situacionRandom());
+bodyHTML.addEventListener("click", () => situacionRandom());
 
 generarNuevoColor();
